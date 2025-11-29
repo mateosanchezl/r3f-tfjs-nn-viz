@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import { NetworkScene } from './components/scene/NetworkScene';
 import { HUD } from './components/hud/HUD';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <NetworkScene />
       </Canvas>
       <HUD />
+      <Analytics />
     </>
   );
 }
